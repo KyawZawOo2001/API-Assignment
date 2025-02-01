@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body class="scroll-smooth">
+<!--    nab-bar section -->
+    <nav class="w-full p-5 flex justify-between sticky top-0 z-10 bg-white shadow-md">
+        <a href="index.html" class="animation  text-4xl font-bold hover:text-red-500 transition-colors duration-200">TasInTaco</a>
+        <ul class="flex justify-around items-center w-1/2">
+            <li class="relative" ><a href="#featured" class="nav-link text-xl  ">Featured</a></li>
+            <li class="relative" ><a href="#cosmetic-section" class="nav-link text-xl  ">Cosmetics</a></li>
+            <li class="relative" ><a href="#fragrance-section" class="nav-link text-xl  ">Fragrances</a></li>
+            <li class="relative" ><a href="#homeDecor-section" class="nav-link text-xl  ">Home Decor</a></li>
+            <li class="relative" ><a href="#grocery-section" class="nav-link text-xl  ">Groceries</a></li>
+        </ul>
+    </nav>
+<!-- nav-bar section end -->
+
+
+<!-- landing-section start-->
+    <section id="landing" class="landing w-full h-screen bg-cover flex justify-start items-center p-24">
+        <div class="flex flex-col gap-y-3">
+            <p class="text-xl font-semibold">Taco, your best choice!</p>
+            <p class="text-4xl font-bold">Super value deals</p>
+            <p class="text-4xl font-bold text-red-500">On all products</p>
+            <p class="text-xl font-semibold">Up to <span class="text-green-600 text-4xl">50%</span> off</p>
+            <a class="text-white bg-red-500 w-24 p-1 flex justify-center items-center rounded hover:text-red-500 hover:bg-white
+                transition-colors duration-300 border-2 border-transparent hover:border-red-500">Shop Now</a>
+        </div>
+    </section>
+<!--     landing section end -->
+
+<!-- feature product section start-->
+    <section id="featured" class="w-full flex flex-col gap-y-6">
+        <div class="w-full text-4xl font-semibold text-center py-12">Featured New Products</div>
+
+<!--        cosmetic section start -->
+        <div id="cosmetic-section" class="flex flex-col space-y-3">
+            <button id="cosmetic-btn" class="see-all text-xl text-white bg-red-500 border-2 border-transparent
+             hover:text-red-500 hover:bg-white hover:border-red-500 w-30 flex justify-start pl-2
+            items-center rounded ml-24 transition-all duration-300 group hover:w-34">
+                <span class="group-hover:mr-2">Cosmetic</span>
+                <span><i class="group-hover:hidden ml-1 font-md fa-solid fa-chevron-right"></i></span>
+                <span class=" hidden group-hover:inline"><i class="fas fa-chevron-right"></i></span></button>
+        </div>
+        <div id="cosmetic-display" class="w-full px-24 grid grid-cols-4 gap-x-12">
+        </div>
+
+<!--    fragrances section end-->
+        <div id="fragrance-section" class="flex flex-col space-y-3">
+            <button id="fragrance-btn" class=" see-all text-xl text-white bg-red-500 border-2 border-transparent
+             hover:text-red-500 hover:bg-white hover:border-red-500 w-32 flex justify-start pl-2
+            items-center rounded ml-24 transition-all duration-300 group hover:w-38">
+                <span class="group-hover:mr-2">Fragrances</span>
+                <span><i class="group-hover:hidden ml-1 font-md fa-solid fa-chevron-right"></i></span>
+                <span class=" hidden group-hover:inline"><i class="fas fa-chevron-right"></i></span></button>
+        </div>
+        <div id="fragrance-display" class="w-full px-24 grid grid-cols-4 gap-x-12">
+        </div>
+<!--    fragrances section end-->
+
+<!--    Home-decor section start-->
+        <div id="homeDecor-section" class="flex flex-col space-y-3">
+            <button id="homeDecor-btn" class="see-all text-xl text-white bg-red-500 border-2 border-transparent
+             hover:text-red-500 hover:bg-white hover:border-red-500 w-30 flex justify-start pl-2
+            items-center rounded ml-24 transition-all duration-300 group hover:w-34">
+                <span class="group-hover:mr-2">Furniture</span>
+                <span><i class="group-hover:hidden ml-1 font-md fa-solid fa-chevron-right"></i></span>
+                <span class=" hidden group-hover:inline"><i class="fas fa-chevron-right"></i></span></button>
+        </div>
+        <div id="homeDecor-display" class="w-full px-24 grid grid-cols-4 gap-x-12">
+        </div>
+<!--    Home-decor section end-->
+
+<!--        Groceries section start -->
+        <div id="grocery-section" class="flex flex-col space-y-3">
+            <button  id="grocery-btn" class="see-all text-xl text-white bg-red-500 border-2 border-transparent
+             hover:text-red-500 hover:bg-white hover:border-red-500 w-30 flex justify-start pl-2
+            items-center rounded ml-24 transition-all duration-300 group hover:w-34">
+                <span class="group-hover:mr-2">Groceries</span>
+                <span><i class="group-hover:hidden ml-1 font-md fa-solid fa-chevron-right"></i></span>
+                <span class=" hidden group-hover:inline"><i class="fas fa-chevron-right"></i></span></button>
+        </div>
+        <div id="grocery-display" class="w-full px-24 grid grid-cols-4 gap-x-12">
+        </div>
+<!--        Groceries section end -->
+</section>
+<!--    featured product section end -->
+
+
+
+<script src="src/index.js"></script>
+</body>
+</html>
